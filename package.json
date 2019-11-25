@@ -1,6 +1,6 @@
 {
   "name": "relibrary",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Reusable code untuk membangun aplikasi digital library repository.",
   "main": "index.js",
   "scripts": {
