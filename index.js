@@ -1,7 +1,7 @@
 // hotspot pada digital library repository
-exports.AbstractLoader = undefined;
-exports.DocLoader = undefined;
-exports.FilterController = undefined;
-exports.DocServeController = undefined;
+exports.AbstractLoader = require('./lib/AbstractLoader');
+exports.DocLoader = require('./lib/DocLoader');
+exports.FilterController = require('./lib/FilterController');
+exports.DocServeController = require('./lib/DocServeController');
 exports.RequestDataService = require('./lib/RequestDataService');
-exports.Search = undefined;
+exports.SearchController = require('./lib/SearchController');
