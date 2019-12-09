@@ -16,7 +16,14 @@ class DocView extends relibrary.Callback {
   }
 
   loadDoc(data) {
-    // Tahap pembangunan...
+    // let target = {
+    //   id: {
+    //     kolom_id: data
+    //   },
+    //   filename: 'kolom_nama_file',
+    //   from: ''
+    // }
+    // return this.#docLoader.getDoc(target)
   }
 }
 
