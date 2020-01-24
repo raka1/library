@@ -3,9 +3,9 @@ let relibrary = require('relibrary');
 class DocServe extends relibrary.Callback {
   #docServeController;
 
-  constructor() {
+  constructor(config) {
     super();
-    this.#docServeController = new relibrary.DocServeController();
+    this.#docServeController = new relibrary.DocServeController(config);
   }
 
   onSuccess(data) {

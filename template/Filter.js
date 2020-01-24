@@ -3,9 +3,9 @@ let relibrary = require('relibrary');
 class Filter extends relibrary.Callback {
   #filterController;
 
-  constructor() {
+  constructor(config) {
     super();
-    this.#filterController = new relibrary.FilterController();
+    this.#filterController = new relibrary.FilterController(config);
   }
 
   onSuccess(data) {
