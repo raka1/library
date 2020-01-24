@@ -1,10 +1,11 @@
 let relibrary = require('relibrary');
 
-class AbstractPreview extends relibrary.Callback {
-  #abstractPreview = new relibrary.AbstractPreview();
+class Abstract extends relibrary.Callback {
+  #abstractLoader;
 
-  constructor() {
+  constructor(config) {
     super();
+    this.#abstractLoader = new relibrary.AbstractLoader(config);
   }
 
   onSuccess(data) {
@@ -13,10 +14,6 @@ class AbstractPreview extends relibrary.Callback {
 
   onError(error) {
     return error;
-  }
-
-  loadDoc() {
-    // Tahap pembangunan...
   }
 }
 

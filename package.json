@@ -1,6 +1,6 @@
 {
   "name": "relibrary",
-  "version": "0.0.1",
+  "version": "0.0.2a",
   "description": "Reusable code untuk membangun aplikasi digital library repository.",
   "main": "index.js",
   "scripts": {
@@ -9,8 +9,6 @@
   "author": "Raka Muhamad Pratama",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^2.7.4",
-    "express": "^4.17.1",
     "mysql": "^2.17.1"
   }
 }

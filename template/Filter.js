@@ -1,10 +1,11 @@
 let relibrary = require('relibrary');
 
 class Filter extends relibrary.Callback {
-  #filterController = new relibrary.FilterController();
+  #filterController;
 
   constructor() {
     super();
+    this.#filterController = new relibrary.FilterController();
   }
 
   onSuccess(data) {
@@ -13,10 +14,6 @@ class Filter extends relibrary.Callback {
 
   onError(error) {
     return error;
-  }
-
-  setFilter(data) {
-    // Tahap pembangunan...
   }
 }
 

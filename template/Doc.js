@@ -1,11 +1,11 @@
 let relibrary = require('relibrary');
 
-class DocServe extends relibrary.Callback {
-  #docServeController;
+class Doc extends relibrary.Callback {
+  #docLoader;
 
   constructor() {
     super();
-    this.#docServeController = new relibrary.DocServeController();
+    this.#docLoader = new relibrary.DocLoader();
   }
 
   onSuccess(data) {
@@ -17,4 +17,4 @@ class DocServe extends relibrary.Callback {
   }
 }
 
-module.exports = DocServe;
+module.exports = Doc;
