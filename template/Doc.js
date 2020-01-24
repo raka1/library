@@ -3,9 +3,9 @@ let relibrary = require('relibrary');
 class Doc extends relibrary.Callback {
   #docLoader;
 
-  constructor() {
+  constructor(config) {
     super();
-    this.#docLoader = new relibrary.DocLoader();
+    this.#docLoader = new relibrary.DocLoader(config);
   }
 
   onSuccess(data) {
@@ -13,7 +13,17 @@ class Doc extends relibrary.Callback {
   }
 
   onError(error) {
-    return error;
+    switch(error) {
+      case 'ERR01':
+        return 'Diperlukan argumen pada saat memanggil hook method.';
+        break;
+      case 'ERR02':
+        return 'Argumen untuk memanggil hook method harus bertipe object.';
+        break;
+      case 'ERR03':
+        return 'Argumen objek setidaknya memiliki property idValue, idField, descField, dan table.';
+        break;
+    }
   }
 }
 
