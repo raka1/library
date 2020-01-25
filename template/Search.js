@@ -3,9 +3,8 @@ let relibrary = require('relibrary');
 class Search extends relibrary.Callback {
   #searchController;
 
-  constructor(config) {
+  constructor() {
     super();
-    this.#searchController = new relibrary.SearchController(config);
   }
 
   onSuccess(data) {
