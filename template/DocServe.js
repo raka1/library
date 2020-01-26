@@ -15,18 +15,15 @@ class DocServe extends relibrary.Callback {
   onError(error) {
     switch(error) {
       case 'ERR01':
-        return 'Diperlukan argumen pada saat memanggil hook method.';
+        return 'Diperlukan argumen bertipe objek untuk memanggil hook method.';
         break;
       case 'ERR02':
-        return 'Argumen untuk memanggil hook method harus bertipe object.';
+        return 'Argumen objek setidaknya memiliki property method, action, dan field.';
         break;
       case 'ERR03':
-        return 'Argumen objek setidaknya memiliki property sql atau request.';
+        return 'Argumen objek setidaknya memiliki property method, action, dan attribute.';
         break;
-      case 'ERR04':
-        return '';
-        break;
-    }
+  }
   }
 }
 

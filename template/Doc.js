@@ -15,12 +15,9 @@ class Doc extends relibrary.Callback {
   onError(error) {
     switch(error) {
       case 'ERR01':
-        return 'Diperlukan argumen pada saat memanggil hook method.';
+        return 'Diperlukan argumen bertipe objek untuk memanggil hook method.';
         break;
-      case 'ERR02':
-        return 'Argumen untuk memanggil hook method harus bertipe object.';
-        break;
-      case 'ERR03':
+      case 'ERR02s':
         return 'Argumen objek setidaknya memiliki property idValue, idField, descField, dan table.';
         break;
     }
