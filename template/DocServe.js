@@ -23,7 +23,7 @@ class DocServe extends relibrary.Callback {
       case 'ERR03':
         return 'Argumen objek setidaknya memiliki property method, action, dan attribute.';
         break;
-  }
+    }
   }
 }
 
