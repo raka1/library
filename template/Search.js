@@ -22,6 +22,7 @@ class Search extends relibrary.Callback {
       case 'ERR03':
         return 'Argumen objek setidaknya memiliki property action, dan attribute.';
         break;
+    }
   }
 }
 
