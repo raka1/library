@@ -21,7 +21,7 @@ class DocServe extends relibrary.Callback {
         return 'Argumen objek setidaknya memiliki property idField, titleField, descField, yearField, linkField, dan table.';
         break;
       case 'ERR03':
-        return 'Argumen objek setidaknya memiliki property idField, titleField, imageField, linkField, dan table.';
+        return 'Argumen objek setidaknya memiliki property idField, titleField, imageField, dirImageField, linkField, dan table.';
         break;
     }
   }
