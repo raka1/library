@@ -18,10 +18,10 @@ class DocServe extends relibrary.Callback {
         return 'Diperlukan argumen bertipe objek untuk memanggil hook method.';
         break;
       case 'ERR02':
-        return 'Argumen objek setidaknya memiliki property method, action, dan field.';
+        return 'Argumen objek setidaknya memiliki property idField, titleField, descField, yearField, linkField, dan table.';
         break;
       case 'ERR03':
-        return 'Argumen objek setidaknya memiliki property method, action, dan attribute.';
+        return 'Argumen objek setidaknya memiliki property idField, titleField, imageField, linkField, dan table.';
         break;
     }
   }
