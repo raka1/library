@@ -1,7 +1,7 @@
 {
   "name": "relibrary",
   "version": "0.0.2a",
-  "description": "Reusable code untuk membangun aplikasi digital library repository.",
+  "description": "Class library untuk membangun aplikasi digital library repository.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
