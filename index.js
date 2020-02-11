@@ -1,4 +1,5 @@
 exports.Abstract = require('./lib/Abstract');
+exports.Assets = require('./lib/Assets');
 exports.CRUD = require('./lib/CRUD');
 exports.Doc = require('./lib/Doc');
 exports.DocServe = require('./lib/DocServe');
